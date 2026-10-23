@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabrielly Alexandra | Portfólio Profissional</title>
+    
+    <!-- Google Fonts: Importando a fonte Caveat (solicitada) e Poppins para leitura legível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons (CDN Oficial via tag link) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Estilos CSS do Projeto -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Menu de Navegação -->
+    <header class="cabecalho">
+        <div class="conteudo-cabecalho">
+            <a href="#inicio" class="logo-cabecalho">Gabrielly<span>.dev</span></a>
+            
+            <!-- Botão Hambúrguer para Telas Menores -->
+            <button class="botao-menu-mobile" id="botao-menu-mobile" aria-label="Abrir Menu">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <nav class="menu-navegacao" id="menu-navegacao">
+                <ul class="lista-menu">
+                    <li><a href="#inicio" class="link-menu active">Início</a></li>
+                    <li><a href="#sobre" class="link-menu">Sobre Mim</a></li>
+                    <li><a href="#habilidades" class="link-menu">Habilidades</a></li>
+                    <li><a href="#educacao" class="link-menu">Educação</a></li>
+                    <li><a href="#portfolio" class="link-menu">Portfólio</a></li>
+                    <li><a href="#contato" class="link-menu">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão de Alternar Tema (Dark/Light Mode) -->
+            <button class="botao-tema" id="botao-tema" title="Alternar Tema">
+                <i class="bi bi-moon-fill" id="icone-tema"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero / Apresentação Inicial -->
+        <section id="inicio" class="secao-hero">
+            <div class="conteiner-hero">
+                <div class="cartao-apresentacao observavel">
+                    <span class="emblema-saudacao">👋 Olá, seja bem-vindo(a)</span>
+                    <h1 class="nome-principal">Gabrielly Alexandra Aguiar Bruno</h1>
+                    <h2 class="subtitulo-profissa">
+                        <span id="texto-maquina"></span><span class="cursor-maquina">|</span>
+                    </h2>
+                    <p class="descricao-hero">
+                        Focada em criar experiências digitais modernas, acessíveis e de alto impacto através do código.
+                    </p>
+                    <div class="botoes-hero">
+                        <!-- Botão Chamativo de Destaque apontando para o arquivo do CV em PDF -->
+                        <a href="curriculo.pdf" download="Curriculo_Gabrielly_Bruno.pdf" target="_blank" class="botao-primario">
+                            <i class="bi bi-file-earmark-arrow-down-fill"></i> Baixar meu CV
+                        </a>
+                        <a href="#contato" class="botao-secundario">
+                            <i class="bi bi-chat-dots-fill"></i> Vamos Conversar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="secao-conteudo">
+            <div class="conteiner">
+                <h2 class="titulo-secao observavel">Sobre Mim</h2>
+                <div class="cartao-sobre observavel">
+                    <div class="icone-destaque-sobre">
+                        <i class="bi bi-code-square"></i>
+                    </div>
+                    <div class="texto-sobre">
+                        <p>
+                            Sou estudante do 1º ano do Ensino Médio Técnico em Informática para Internet pela <strong>SESC Escola</strong>, em parceria com o <strong>SENAC</strong>. Com forte foco em programação, iniciei minha trilha de aprendizado me especializando em desenvolvimento Front-end.
+                        </p>
+                        <p>
+                            Nos próximos anos, minha formação se expandirá para o Back-end (2º ano) e desenvolvimento Mobile (3º ano), construindo uma base sólida para me tornar uma Desenvolvedora Full Stack completa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades e Tecnologia -->
+        <section id="habilidades" class="secao-conteudo">
+            <div class="conteiner">
+                <h2 class="titulo-secao observavel">Minhas Habilidades</h2>
+                <div class="grade-habilidades">
+                    <div class="cartao-habilidade observavel">
+                        <i class="bi bi-filetype-html icone-hab"></i>
+                        <h3>HTML5</h3>
+                        <p>Estruturação semântica e acessível.</p>
+                    </div>
+                    <div class="cartao-habilidade observavel">
+                        <i class="bi bi-filetype-css icone-hab"></i>
+                        <h3>CSS3</h3>
+                        <p>Estilização moderna, Flexbox, Grid e Animações.</p>
+                    </div>
+                    <div class="cartao-habilidade observavel">
+                        <i class="bi bi-filetype-js icone-hab"></i>
+                        <h3>JavaScript</h3>
+                        <p>Manipulação do DOM, ES6+ e lógica dinâmica.</p>
+                    </div>
+                    <div class="cartao-habilidade observavel">
+                        <i class="bi bi-cpu icone-hab"></i>
+                        <h3>Lógica & Algoritmos</h3>
+                        <p>Resolução de problemas estruturados e Portugol.</p>
+                    </div>
+                    <div class="cartao-habilidade observavel">
+                        <i class="bi bi-git icone-hab"></i>
+                        <h3>Git & GitHub</h3>
+                        <p>Controle de versão e trabalho colaborativo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Educação / Roadmap de Carreira -->
+        <section id="educacao" class="secao-conteudo">
+            <div class="conteiner">
+                <h2 class="titulo-secao observavel">Educação e Roadmap</h2>
+                <div class="cartao-educacao-principal observavel">
+                    <div class="cabecalho-educacao">
+                        <i class="bi bi-mortarboard-fill icone-educacao"></i>
+                        <div>
+                            <h3>Ensino Médio Integrado ao Técnico em Informática para Internet</h3>
+                            <p class="instituicao">SESC ESCOLA & SENAC — Previsão de Conclusão: 2026</p>
+                        </div>
+                    </div>
+
+                    <h4 class="titulo-trilha">Trilha de Especialização de 3 Anos:</h4>
+                    
+                    <!-- Linha do Tempo / Roadmap Visual em 3 Etapas -->
+                    <div class="linha-tempo">
+                        <div class="etapa-linha-tempo etapa-atual">
+                            <div class="marcador-etapa"><i class="bi bi-laptop"></i></div>
+                            <div class="conteudo-etapa">
+                                <span class="tag-etapa">1º Ano — Em Andamento</span>
+                                <h4>Front-end</h4>
+                                <p>HTML5, CSS3, JavaScript Vanilla e interfaces responsivas.</p>
+                            </div>
+                        </div>
+
+                        <div class="etapa-linha-tempo etapa-proxima">
+                            <div class="marcador-etapa"><i class="bi bi-server"></i></div>
+                            <div class="conteudo-etapa">
+                                <span class="tag-etapa">2º Ano — Próximo Passo</span>
+                                <h4>Back-end</h4>
+                                <p>Bancos de dados, APIs REST e lógica no servidor.</p>
+                            </div>
+                        </div>
+
+                        <div class="etapa-linha-tempo etapa-futura">
+                            <div class="marcador-etapa"><i class="bi bi-phone"></i></div>
+                            <div class="conteudo-etapa">
+                                <span class="tag-etapa">3º Ano — Futuro</span>
+                                <h4>Mobile</h4>
+                                <p>Desenvolvimento de aplicativos móveis nativos e híbridos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio e Estudos -->
+        <section id="portfolio" class="secao-conteudo">
+            <div class="conteiner">
+                <h2 class="titulo-secao observavel">Meu Portfólio e Estudos</h2>
+
+                <!-- Subseção A: Projetos de Destaque -->
+                <h3 class="subtitulo-secao observavel"><i class="bi bi-star-fill"></i> Projetos de Destaque</h3>
+                <div class="grade-projetos">
+                    
+                    <!-- Projeto 1 -->
+                    <article class="cartao-projeto observavel">
+                        <div class="imagem-projeto-container">
+                            <div class="placeholder-imagem">
+                                <i class="bi bi-robot"></i>
+                                <span>Projeto RoboMaker</span>
+                            </div>
+                        </div>
+                        <div class="conteudo-projeto">
+                            <h3>Projeto RoboMaker</h3>
+                            <p>Esse site vende peças de computador das melhores qualidades, e também vende um curso de lógica e pensamento computacional para pessoas que se cadastrarem.</p>
+                            <div class="tags-tecnologia">
+                                <span class="tag-tech">HTML5</span>
+                            </div>
+                            <div class="links-projeto">
+                                <a href="https://aguiar-gabys.github.io/projeto-robomaker/" target="_blank" class="botao-link-projeto">
+                                    <i class="bi bi-box-arrow-up-right"></i> Ver Site
+                                </a>
+                                <a href="https://github.com/Aguiar-Gabys/projeto-robomaker" target="_blank" class="botao-link-projeto secundario">
+                                    <i class="bi bi-github"></i> Repositório
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="cartao-projeto observavel">
+                        <div class="imagem-projeto-container">
+                            <div class="placeholder-imagem musical">
+                                <i class="bi bi-music-note-beamed"></i>
+                                <span>Compasso Musical</span>
+                            </div>
+                        </div>
+                        <div class="conteudo-projeto">
+                            <h3>Compasso Musical</h3>
+                            <p>Esse site vende instrumentos das melhores qualidades, além de fazer entregas até o seu departamento.</p>
+                            <div class="tags-tecnologia">
+                                <span class="tag-tech">HTML5</span>
+                            </div>
+                            <div class="links-projeto">
+                                <a href="https://aguiar-gabys.github.io/compasso-musical/" target="_blank" class="botao-link-projeto">
+                                    <i class="bi bi-box-arrow-up-right"></i> Ver Site
+                                </a>
+                                <a href="https://github.com/Aguiar-Gabys/compasso-musical" target="_blank" class="botao-link-projeto secundario">
+                                    <i class="bi bi-github"></i> Repositório
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Subseção B: Repositórios de Estudo -->
+                <h3 class="subtitulo-secao observavel espaco-topo"><i class="bi bi-journal-code"></i> Repositórios de Estudo</h3>
+                <div class="grade-repositorios">
+                    
+                    <a href="https://github.com/Aguiar-Gabys/html" target="_blank" class="cartao-repositorio observavel">
+                        <i class="bi bi-folder-symlink-fill icone-repo"></i>
+                        <div>
+                            <h4>Trilha de HTML e CSS</h4>
+                            <p>Exercícios, estruturas e conceitos de estilização prática.</p>
+                        </div>
+                        <i class="bi bi-chevron-right seta-repo"></i>
+                    </a>
+
+                    <a href="https://github.com/Aguiar-Gabys/JavaScript" target="_blank" class="cartao-repositorio observavel">
+                        <i class="bi bi-folder-symlink-fill icone-repo"></i>
+                        <div>
+                            <h4>Trilha de JavaScript Vanilla</h4>
+                            <p>Algoritmos, manipulação do DOM e lógica interativa.</p>
+                        </div>
+                        <i class="bi bi-chevron-right seta-repo"></i>
+                    </a>
+
+                    <a href="https://github.com/Aguiar-Gabys/algoritmos" target="_blank" class="cartao-repositorio observavel">
+                        <i class="bi bi-folder-symlink-fill icone-repo"></i>
+                        <div>
+                            <h4>Lógica de Programação e Algoritmos</h4>
+                            <p>Exercícios desenvolvidos em Portugol e estrutura de dados básica.</p>
+                        </div>
+                        <i class="bi bi-chevron-right seta-repo"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Conecte-se Comigo (Sem formulário tradicional) -->
+        <section id="contato" class="secao-conteudo">
+            <div class="conteiner">
+                <h2 class="titulo-secao observavel">Vamos Conversar?</h2>
+                <p class="subtitulo-contato observavel">Sinta-se à vontade para me enviar uma mensagem ou acompanhar meu aprendizado nas redes!</p>
+                
+                <div class="grade-contatos">
+                    <!-- E-mail -->
+                    <a href="mailto:puguerorobson@gmail.com" class="cartao-contato cartao-email observavel">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span class="nome-rede">E-mail</span>
+                        <span class="detalhe-rede">puguerorobson@gmail.com</span>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/Aguiar-Gabys" target="_blank" class="cartao-contato cartao-github observavel">
+                        <i class="bi bi-github"></i>
+                        <span class="nome-rede">GitHub</span>
+                        <span class="detalhe-rede">@Aguiar-Gabys</span>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5565984242223" target="_blank" class="cartao-contato cartao-whatsapp observavel">
+                        <i class="bi bi-whatsapp"></i>
+                        <span class="nome-rede">WhatsApp</span>
+                        <span class="detalhe-rede">+55 (65) 98424-2223</span>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/aguiar.gabys" target="_blank" class="cartao-contato cartao-instagram observavel">
+                        <i class="bi bi-instagram"></i>
+                        <span class="nome-rede">Instagram</span>
+                        <span class="detalhe-rede">@aguiar.gabys</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="conteiner conteiner-rodape">
+            <p>
+                Desenvolvido com <i class="bi bi-suit-heart-fill icone-coracao"></i> por <strong>Gabrielly Alexandra Aguiar Bruno</strong>
+            </p>
+            <p class="copyright-texto">
+                &copy; <span id="ano-atual"></span> — Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante Voltar ao Topo -->
+    <button id="botao-topo" class="botao-topo" aria-label="Voltar ao topo">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Script JavaScript Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
